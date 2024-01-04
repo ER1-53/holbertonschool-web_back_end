@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" generator """
+"""
+This module defines an asynchronous generator that yields random
+floating-point numbers between 0 and 10 after each asynchronous sleep of
+1 second.
+"""
 
 import asyncio
 import random
