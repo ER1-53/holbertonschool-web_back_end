@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+""" generator  """
 import random
 from typing import Generator
 import asyncio
 import time
-""" generator  """
+
 
 async def async_generator() -> Generator[float, None, None]:
     """ generator """
