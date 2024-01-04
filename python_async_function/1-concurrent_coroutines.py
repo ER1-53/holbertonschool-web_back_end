@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import asyncio
 from typing import List
-""" running win """
 wait_random = __import__('0-basic_async_syntax').wait_random
+""" running win """
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
@@ -22,7 +22,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         The list of delays is returned in ascending order without using sort()
         due to concurrency.
     """
-    
+
     list_of_delay = []
     for turn in range(n):
         list_of_delay.append(await wait_random(max_delay))
