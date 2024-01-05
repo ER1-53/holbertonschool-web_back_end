@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 This module defines an asynchronous generator that yields random
 floating-point numbers between 0 and 10 after each asynchronous sleep of
