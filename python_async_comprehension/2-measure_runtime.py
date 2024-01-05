@@ -10,21 +10,7 @@ import asyncio
 import time
 
 
-async def async_generator() -> Generator[float, None, None]:
-    """
-    loop to 10 time
-    """
-    for i in range(10):
-        await asyncio.sleep(1)
-        yield random.uniform(0, 10)
-
-
-async def async_comprehension() -> Generator[float, None, None]:
-    """
-    check a random number
-    """
-    random_numbers = [number async for number in async_generator()]
-    return random_numbers
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> Generator[float, None, None]:
