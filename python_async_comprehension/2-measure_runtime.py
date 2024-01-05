@@ -5,7 +5,7 @@ previous file and write a measure_runtime coroutine that will execute
 async_comprehension four times in parallel using asyncio.gather
 """
 import random
-from typing import Generator
+from typing import List
 import asyncio
 import time
 
@@ -13,7 +13,7 @@ import time
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime() -> Generator[float, None, None]:
+async def measure_runtime() -> List[float]:
     """
     loop to 10 time
     """
