@@ -5,13 +5,7 @@ from typing import List
 """ simple pagination"""
 
 
-def index_range(page: int, page_size: int):
-    """ index all page """
-    assert isinstance(page, int) and page > 0
-    assert isinstance(page_size, int) and page_size > 0
-    start_index = (page - 1) * page_size
-    end_index = start_index + page_size
-    return (start_index, end_index)
+index_range = __import__('0-simple_helper_function').index_range
 
 
 class Server:
