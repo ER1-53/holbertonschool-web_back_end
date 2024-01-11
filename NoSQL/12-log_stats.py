@@ -11,11 +11,11 @@ if __name__ == "__main__":
 
     print("{} logs".format(counts))
 
-    methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
+    methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     for method in methods:
         count = collection.count_documents({"method": method})
-        print("\tmethod {}: {} logs".format(method, count))
+        print("\tmethod {}: {}".format(method, count))
 
     specific_query = {"method": "GET", "path": "/status"}
     specific_count = collection.count_documents(specific_query)
