@@ -4,12 +4,13 @@ from pymongo import MongoClient
 
 
 if __name__ == "__main__":
-    client = MongoClient('mongodb://localhost:27017/')
-    db = client['logs']
-    collection = db['nginx']
+    client = MongoClient('localhost', 27017)
+    collection = client.logs.nginx
 
     count = collection.count_documents({})
+
     print("{} logs".format(count))
+    
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
     for method in methods:
