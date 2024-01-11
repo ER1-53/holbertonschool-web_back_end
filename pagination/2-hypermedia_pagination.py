@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+""" simple pagination"""
 import csv
 import math
 from typing import List, Dict, Union
-""" hypermedia pagination """
 
 
 def index_range(page: int, page_size: int):
@@ -34,13 +34,12 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """Page get by document"""
+        """ return the good page of the dtaset """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
         start_index, end_index = index_range(page, page_size)
-        dataset = self.dataset()
-        return dataset[start_index:end_index]
+        return self.dataset()[start_index:end_index]
 
     def get_hyper(
             self, page: int = 1, page_size: int = 10
