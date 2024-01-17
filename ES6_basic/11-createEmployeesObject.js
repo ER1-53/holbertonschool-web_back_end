@@ -1,3 +1,1 @@
-export default (departmentName, employees) => {
-  return {[departmentName]: [...employees]};
-};
+export default (departmentName, employees) => ({ [departmentName]: [...employees] });
