@@ -1,4 +1,4 @@
-import getBudgetObject from './7-getBudgetObject.js';
+import getBudgetObject from './7-getBudgetObject';
 
 export default (income, gdp, capita) => {
   const budget = getBudgetObject(income, gdp, capita);
