@@ -5,10 +5,10 @@ export default (income, gdp, capita) => {
   const fullBudget = {
     ...budget,
     getIncomeInDollars(income) {
-      return `$${income}`
+      return `$${income}`;
     },
     getIncomeInEuros(income) {
-      return `${income} euros`
+      return `${income} euros`;
     },
   };
 
