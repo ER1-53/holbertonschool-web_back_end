@@ -5,11 +5,11 @@ export default class Pricing {
   }
 
   get amount() {
-    return `${this._amount}`;
+    return this._amount ;
   }
 
   get currency() {
-    return `${this.currency}`;
+    return this._currency;
   }
 
   set amount(value) {
