@@ -1,3 +1,1 @@
-export default (array, appendString) => {
-  return array.map(value => appendString + value);
-}
+export default (array, appendString) => array.map((value) => appendString + value);
