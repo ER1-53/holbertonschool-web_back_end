@@ -1,3 +1,6 @@
-export default function getBudgetObject(income, gdp, capita) {
-  return { income, gdp, capita };
+export default class Airport {
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
+  }
 }
