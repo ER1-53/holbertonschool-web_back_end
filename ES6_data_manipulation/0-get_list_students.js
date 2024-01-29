@@ -2,7 +2,7 @@ function getListStudents() {
   const keys = ['id', 'firstName', 'location'];
   const values = [1, 'Guillaume', 'San Francisco'];
   const values1 = [2, 'James', 'Columbia'];
-  const values2 = [3, 'Serena', 'San Francisco'];
+  const values2 = [5, 'Serena', 'San Francisco'];
   const obj = {};
   const obj1 = {};
   const obj2 = {};
