@@ -12,10 +12,7 @@ function getListStudents() {
 		obj2[key]= values2[index];
 	})
 	const array = []
-	const objAll = array.push(obj, obj1, obj2);
-	// ObjAll return le nombre d'obj
-	//Array contient les obj
-	console.log(objAll)
+	array.push(obj, obj1, obj2);
 	return array;
 };
 
