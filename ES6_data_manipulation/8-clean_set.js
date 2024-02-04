@@ -1,4 +1,5 @@
 function cleanSet(set, startString) {
+  if (!startString || typeof startString !== 'string') return '';
   // Créer un tableau pour stocker les valeurs nettoyées
   const cleanedValues = [];
 

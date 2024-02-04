@@ -1,5 +1,5 @@
 function createInt8TypedArray(length, position, value) {
-  if (value == null) {
+  if (value == null || position >= length) {
     throw Error('Position outside range');
   } else {
     const buffer = new ArrayBuffer(length);
